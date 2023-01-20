@@ -3,6 +3,10 @@
 
 This is a REST API for my mfe examples.
 
+
+
+![micro front-end full-stack example architecture ](mfe-architecture.png "micro front-end full-stack example architecture")
+
 Download, build and run, and test with:
 
 http://localhost:8080/hello
