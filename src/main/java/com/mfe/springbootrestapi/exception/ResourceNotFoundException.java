@@ -1,5 +1,5 @@
 
-package com.mfe.springbootrestapi.excpetion;
+package com.mfe.springbootrestapi.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

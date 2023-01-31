@@ -10,9 +10,9 @@ import jakarta.persistence.*;
 
 
 @Entity
-@Table(name = "people")
-public class Person {
-	
+@Table(name = "employees")
+public class Employee {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
@@ -23,20 +23,20 @@ public class Person {
 	@Column(name = "last_name")
 	private String lastName;
 
-	@Column(name = "email_ID")
-	private String emailID;
-	 
+	@Column(name = "email_id")
+	private String emailId;
+
 	 // default constructor
-	 public Person() {
-		 
+	 public Employee() {
+
 	 }
 
  	// parameter constructo
-	public Person(String firstName, String lastName, String emailID) {
+	public Employee(String firstName, String lastName, String emailID) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.emailID = emailID;
+		this.emailId = emailId;
 	}
 	
 	// accessor and mutator methods
@@ -46,23 +46,26 @@ public class Person {
 	public void setId(long id) {
 		this.id = id;
 	}
+
 	public String getFirstName() {
 		return firstName;
 	}
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
+
 	public String getLastName() {
 		return lastName;
 	}
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public String getEmailID() {
-		return emailID;
+
+	public String getEmailId() {
+		return emailId;
 	}
-	public void setEmailID(String emailID) {
-		this.emailID = emailID;
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
 	}
  
 }
