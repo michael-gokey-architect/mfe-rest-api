@@ -51,10 +51,16 @@ http://localhost:8080/demo/add -d firstName=Karthik -d lastName=Gokey -d emailId
 
 INSERT INTO employee (first_name, last_name, email_id) VALUES ('Sunny', 'Mohan', 'sunny.mohan@outlook.com');
 
+ALTER TABLE employee MODIFY COLUMN id int NOT NULL AUTO_INCREMENT;
+
+
 SELECT * FROM employee;
 
+http://localhost:8080/demo/all
 
-ALTER TABLE employee MODIFY COLUMN id int NOT NULL AUTO_INCREMENT;
+
+
+INSERT INTO employee (first_name, last_name, email_id) VALUES ('Michael', 'Gokey', 'michael-gokey-architect@outlook.com');
 
 -----------------------------------------------------------
 
@@ -84,3 +90,42 @@ spring mvc controller and call the userRepositry to save information in the data
 
 
 ## Step  9 - Add Bootstrap
+
+
+
+https://spring.io/guides/gs/accessing-data-mysql/
+
+https://spring.io/guides/gs/rest-service/
+
+
+
+
+https://www.springboottutorial.com/spring-boot-crud-rest-service-with-jpa-hibernate
+
+
+
+https://www.bezkoder.com/spring-boot-jpa-crud-rest-api/
+
+https://www.bezkoder.com/deploy-spring-boot-aws-eb/
+
+https://www.bezkoder.com/spring-boot-angular-15-crud/
+
+https://www.bezkoder.com/angular-15-spring-boot-jwt-auth/
+
+
+https://www.javaguides.net/2021/08/angular-12-spring-boot-crud-example.html
+
+https://www.javaguides.net/2019/06/spring-boot-crudrepository-example-tutorial.html
+
+
+
+## Documenting a Spring REST API Using OpenAPI 3.0
+Last modified: January 30, 2023
+
+https://www.baeldung.com/spring-rest-openapi-documentation
+
+https://springdoc.org/#Introduction
+
+
+
+
