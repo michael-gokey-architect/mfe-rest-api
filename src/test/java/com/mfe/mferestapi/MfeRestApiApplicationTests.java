@@ -1,10 +1,10 @@
-package com.mfe.springbootrestapi;
+package com.mfe.mferestapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootRestApiApplicationTests {
+class MfeRestApiApplicationTests {
 
 	@Test
 	void contextLoads() {

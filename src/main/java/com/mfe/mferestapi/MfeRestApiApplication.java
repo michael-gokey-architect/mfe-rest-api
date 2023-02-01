@@ -1,13 +1,13 @@
-package com.mfe.springbootrestapi;
+package com.mfe.mferestapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootRestApiApplication {
+public class MfeRestApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootRestApiApplication.class, args);
+		SpringApplication.run(MfeRestApiApplication.class, args);
 	}
 
 }

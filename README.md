@@ -36,14 +36,27 @@ CREATE DATABASE people_management_system
 
 CREATE DATABASE employee_management_system
 
+
 CREATE USER ‘local_user’@’localhost’ IDENTIFIED BY ‘password’;
+
+CREATE USER 'springuser'@'%' identified by 'ThePassword'; -- Creates a user
+
+GRANT ALL on employee_management_system.* to 'springuser'@'%'; -- Gives all privileges to the new user on the newly created database
 
 SELECT * FROM mysql.user;
 
-webApp
-sampleMFE-pass@21
+-----------------------------------------------------------
+
+http://localhost:8080/demo/add -d firstName=Karthik -d lastName=Gokey -d emailId=michael.mohan@outlook.com
+
+INSERT INTO employee (first_name, last_name, email_id) VALUES ('Sunny', 'Mohan', 'sunny.mohan@outlook.com');
+
+SELECT * FROM employee;
 
 
+ALTER TABLE employee MODIFY COLUMN id int NOT NULL AUTO_INCREMENT;
+
+-----------------------------------------------------------
 
 
 ## Step 4 - Creating JPA Entity + Repository
